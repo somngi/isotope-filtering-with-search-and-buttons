@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Isotope filtering with search and buttons - COIDEA</title>
+		<meta name="description" content="As the original description indicates, Isotope helps with filtering and sorting of grid layouts, which is the main target of this draft, too." />
+		<meta name="keywords" content="isotope, animation, inspiration, javascript, html5, css3, filtering, grid" />
+		<meta name="author" content="Mirza Hodzic - COIDEA" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    
+    <!-- DELETE THIS PART ( Global site tag (gtag.js) - Google Analytics ) - START -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124048250-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124048250-1');
+    </script>
+    <!-- DELETE THIS PART ( Global site tag (gtag.js) - Google Analytics ) - END -->
+
+  </head>
+  <body>
+
+    <!-- COIDEA:header START -->
+    <header class="coidea-header">
+      <div class="coidea-links">
+        <a class="coidea-icon-back" href="https://coidea.website/categories/drafts/isotope-filtering-with-search-and-buttons/" title="Back to the article">C</a>
+        <a class="coidea-icon-github" href="https://github.com/COIDEAwebsite/isotope-filtering-with-search-and-buttons" target="_blank" title="This article on Github">G</a>
+      </div>
+    </header>
+    <!-- COIDEA:header END -->
+    
+    <!-- COIDEA:demo START -->
+    <section class="coidea-demo">
+      <h1>Isotope filtering with search and buttons</h1>
+    
+      <input type="text" id="quicksearch" placeholder="search" />
+    
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter="*"><span>show all</span></button>
+        <button class="button" data-filter=".web"><span>web</span></button>
+        <button class="button" data-filter=".app"><span>app</span></button>
+        <button class="button" data-filter=".design"><span>design</span></button>
+        <button class="button" data-filter=".seo"><span>SEO</span></button>
+        <button class="button" data-filter=".social"><span>social</span></button>
+      </div>
+    
+      <div class="grid">
+        <div class="element-item web " data-category="web">
+          <img src="assets/img/web-1.jpeg" alt="" />
+          <h2>Get Creative</h2>
+          <p>17 334 views</p>
+        </div>
+        <div class="element-item web" data-category="web">
+          <img src="assets/img/web-2.jpeg" alt="" />
+          <h2>Dining room</h2>
+          <p>10 498 views</p>
+        </div>
+        <div class="element-item web" data-category="web">
+          <img src="assets/img/web-3.png" alt="" />
+          <h2>Workhard Anywhere</h2>
+          <p>21 764 views</p>
+        </div>
+        <div class="element-item web " data-category="web">
+          <img src="assets/img/web-4.jpeg" alt="" />
+          <h2>Happiness</h2>
+          <p>99 999 views</p>
+        </div>
+        <div class="element-item web " data-category="web">
+          <img src="assets/img/web-5.jpeg" alt="" />
+          <h2>Three</h2>
+          <p>12 644 views</p>
+        </div>
+        <div class="element-item web " data-category="web">
+          <img src="assets/img/web-6.jpeg" alt="" />
+          <h2>Waterfall</h2>
+          <p>1234 views</p>
+        </div>
+        <div class="element-item web" data-category="web">
+          <img src="assets/img/web-7.jpeg" alt="" />
+          <h2>Book-o-pedia</h2>
+          <p>11 234 views</p>
+        </div>
+        <div class="element-item web " data-category="web">
+          <img src="assets/img/web-8.jpeg" alt="" />
+          <h2>Florist</h2>
+          <p>34 111 views</p>
+        </div>
+        <div class="element-item app" data-category="app">
+          <img src="assets/img/app-1.jpeg" alt="" />
+          <h2>People's</h2>
+          <p>54 652 views</p>
+        </div>
+        <div class="element-item app " data-category="app">
+          <img src="assets/img/app-2.jpeg" alt="" />
+          <h2>Planner</h2>
+          <p>12 934 views</p>
+        </div>
+        <div class="element-item app " data-category="app">
+          <img src="assets/img/app-3.jpeg" alt="" />
+          <h2>Fooap</h2>
+          <p>23 765 views</p>
+        </div>
+        <div class="element-item app " data-category="app">
+          <img src="assets/img/app-4.jpeg" alt="" />
+          <h2>Hypebeast</h2>
+          <p>21 525 views</p>
+        </div>
+        <div class="element-item app " data-category="app">
+          <img src="assets/img/app-5.jpeg" alt="" />
+          <h2>Jungle</h2>
+          <p>11 525 views</p>
+        </div>
+        <div class="element-item design " data-category="design">
+          <img src="assets/img/design-1.jpeg" alt="" />
+          <h2>Twelve</h2>
+          <p>4 324 views</p>
+        </div>
+        <div class="element-item design " data-category="design">
+          <img src="assets/img/design-2.jpeg" alt="" />
+          <h2>Lipstick</h2>
+          <p>11 234 views</p>
+        </div>
+        <div class="element-item design " data-category="design">
+          <img src="assets/img/design-3.jpeg" alt="" />
+          <h2>Cutout</h2>
+          <p>12 134 views</p>
+        </div>
+        <div class="element-item seo " data-category="seo">
+          <img src="assets/img/seo-1.jpeg" alt="" />
+          <h2>Finance</h2>
+          <p>11 234 views</p>
+        </div>
+        <div class="element-item seo " data-category="seo">
+          <img src="assets/img/seo-2.jpeg" alt="" />
+          <h2>Simplicity</h2>
+          <p>1 234 views</p>
+        </div>
+        <div class="element-item seo " data-category="seo">
+          <img src="assets/img/seo-3.jpeg" alt="" />
+          <h2>Pages</h2>
+          <p>10 234 views</p>
+        </div>
+        <div class="element-item social " data-category="social">
+          <img src="assets/img/social-1.jpeg" alt="" />
+          <h2>Connect</h2>
+          <p>12 934 views</p>
+        </div>
+      </div>
+    </section>    
+    <!-- COIDEA:demo END -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3.0.6/dist/isotope.pkgd.js"></script>
+    
+    <script src="assets/js/demo.js"></script>
+
+  </body>
+</html>
